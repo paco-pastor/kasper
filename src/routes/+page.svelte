@@ -1,2 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+  import NavBar from "../components/Navbar/Navbar.svelte";
+
+    let items = ["Home", "About", "Contact"];
+</script>
+
+<NavBar {items} />
+
+<img src="collection-1.webp" alt="new collection">
+
+<style>
+    img {
+        width: 100%;
+    }
+</style>
