@@ -19,7 +19,7 @@
     color: black;
     display: flex;
     font-family: kasper;
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: relative;
     text-decoration: none;
   }
@@ -27,8 +27,8 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 2px;
-    bottom: -4px;
+    height: 0.2rem;
+    bottom: -0.4rem;
     left: 0;
     background-color: black;
     transform: scaleX(0);
