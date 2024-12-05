@@ -16,7 +16,7 @@
     text-decoration: none;
   }
   p {
-    color: black;
+    color: #040103;
     display: flex;
     font-family: kasper;
     font-size: 1.8rem;
@@ -30,7 +30,7 @@
     height: 0.2rem;
     bottom: -0.4rem;
     left: 0;
-    background-color: black;
+    background-color: #040103;
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.3s ease-in-out;

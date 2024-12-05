@@ -7,6 +7,7 @@
     height: 30vh;
   }
   div {
+    background-color:#f327af;
     display: flex;
     height: 100vh;
     justify-content: center;

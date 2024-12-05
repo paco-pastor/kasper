@@ -2,7 +2,7 @@
 
 <style>
   :global(body) {
-    background-color: #f327af;
+    background-color: #040103;
     margin: 0;
     height: 100%;
   }
