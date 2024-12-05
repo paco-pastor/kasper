@@ -1,18 +1,25 @@
 <script>
-  let props = $props();
+  let { active, value } = $props();
 </script>
 
-<p>{props.value}</p>
+<p class:active>
+  <a href={`/${value.toLowerCase()}`}>{value}</a>
+</p>
 
 <style>
   @font-face {
     font-family: "kasper";
     src: url("arcane-nine.otf");
   }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
   p {
-    display: inline-block;
+    color: black;
+    display: flex;
     font-family: kasper;
-    font-size: 3em;
+    font-size: 2rem;
     position: relative;
     text-decoration: none;
   }
@@ -30,5 +37,11 @@
   }
   p:hover::after {
     transform: scaleX(1);
+  }
+  .active {
+    color: white;
+  }
+  .active::after {
+    background-color: white;
   }
 </style>
