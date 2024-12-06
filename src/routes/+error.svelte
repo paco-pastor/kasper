@@ -4,7 +4,7 @@
 
 {#if $page.status === 404}
   <div>
-    <img src="404.jpg" />
+    <img src="404.jpg" alt="404"/>
   </div>
 {/if}
 

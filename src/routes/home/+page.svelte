@@ -8,6 +8,8 @@
 <Navbar {items}/>
 
 <img src="collection-1.webp" alt="new collection" />
+<img src="collection-2.webp" alt="new collection" />
+<img src="collection-3.webp" alt="new collection" />
 
 <style>
   img {

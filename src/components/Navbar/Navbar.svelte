@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import { fly } from "svelte/transition";
+  import { slide } from "svelte/transition";
   import { page } from "$app/stores";
   import Element from "./Element.svelte";
 
@@ -22,7 +22,7 @@
 </script>
 
 {#if !hidden}
-  <div class="navbar" transition:fly={{ y: -50, duration: 300 }}>
+  <div class="navbar" transition:slide>
     {#each props.items as item}
       <Element value={item} active={active(item)} />
     {/each}
