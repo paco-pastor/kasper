@@ -1,10 +1,24 @@
 <script>
+  import { onMount } from "svelte";
   import NavBar from "../../components/Navbar/Navbar.svelte";
 
-  let items = ["HOME", "COLLECTIONS", "SHOP"];
+  const items = ["HOME", "COLLECTIONS", "SHOP"];
+  let showNavBar = true;
+
+  onMount(() => {
+    const handleScroll = () => {
+      showNavBar = window.scrollY === 0;
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  })
 </script>
 
-<NavBar {items} />
+{#if showNavBar}
+  <NavBar {items} />
+{:else}
+  <NavBar hidden/>
+{/if}
 
 <img src="collection-1.webp" alt="new collection" />
 
