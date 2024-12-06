@@ -1,13 +1,19 @@
-<div>
-  <img src="404.jpg" />
-</div>
+<script>
+  import { page } from "$app/stores";
+</script>
+
+{#if $page.status === 404}
+  <div>
+    <img src="404.jpg" />
+  </div>
+{/if}
 
 <style>
   img {
     height: 30vh;
   }
   div {
-    background-color:#f327af;
+    background-color: #f327af;
     display: flex;
     height: 100vh;
     justify-content: center;
