@@ -12,6 +12,6 @@
   img {
     display: flex;
     justify-self: center;
-    width: 95%;
+    width: 100%;
   }
 </style>
