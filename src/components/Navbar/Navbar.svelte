@@ -11,10 +11,13 @@
     return $page.url.pathname === `/${item.toLowerCase()}`;
   }
 
+  function onmouseenter() {
+    hidden = false;
+  }
+
   onMount(() => {
     const handleScroll = () => {
       hidden = window.scrollY > 0;
-      console.log(hidden);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -27,9 +30,14 @@
       <Element value={item} active={active(item)} />
     {/each}
   </div>
+{:else}
+  <div class="navbar minified" transition:slide {onmouseenter}></div>
 {/if}
 
 <style>
+  .minified {
+    height: 1rem;
+  }
   .navbar {
     background-color: #f327af;
     display: flex;
