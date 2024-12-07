@@ -1,5 +1,6 @@
 <script>
   import Navbar from "../../components/Navbar/Navbar.svelte";
+  import Thumbnail from "../../components/Thumbnail/Thumbnail.svelte";
 
   const items = ["HOME", "COLLECTIONS", "SHOP"];
 
@@ -7,14 +8,8 @@
 
 <Navbar {items}/>
 
-<img src="collection-1.webp" alt="new collection" />
-<img src="collection-2.webp" alt="new collection" />
-<img src="collection-3.webp" alt="new collection" />
+<Thumbnail src="collection-1.webp" title="your style" align="right"/>
+<Thumbnail src="collection-2.webp" title="your rules" />
+<Thumbnail src="collection-3.webp" title="kasper" align="right"/>
 
-<style>
-  img {
-    display: flex;
-    justify-self: center;
-    width: 100%;
-  }
-</style>
+
