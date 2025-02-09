@@ -11,10 +11,6 @@
     return $page.url.pathname === `/${item.toLowerCase()}`;
   }
 
-  function onmouseenter() {
-    hidden = false;
-  }
-
   onMount(() => {
     const handleScroll = () => {
       hidden = window.scrollY > 0;
@@ -31,7 +27,7 @@
     {/each}
   </div>
 {:else}
-  <div class="navbar minified" transition:slide {onmouseenter}></div>
+  <div class="navbar minified" transition:slide></div>
 {/if}
 
 <style>
